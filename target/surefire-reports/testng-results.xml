@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MeerQATS" duration-ms="29709" started-at="2020-07-20T11:59:56Z" finished-at="2020-07-20T12:00:26Z">
+    <groups>
+    </groups>
+    <test name="BasicFunctionality" duration-ms="29709" started-at="2020-07-20T11:59:56Z" finished-at="2020-07-20T12:00:26Z">
+      <class name="com.moodys.meerqats.testcases.LoginAsReviewer">
+        <test-method status="PASS" signature="Base()[pri:0, instance:com.moodys.meerqats.testcases.LoginAsReviewer@6debcae2]" name="Base" is-config="true" duration-ms="6139" started-at="2020-07-20T12:00:10Z" finished-at="2020-07-20T12:00:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Base -->
+        <test-method status="PASS" signature="ReviewerAccess()[pri:0, instance:com.moodys.meerqats.testcases.LoginAsReviewer@6debcae2]" name="ReviewerAccess" duration-ms="7937" started-at="2020-07-20T12:00:17Z" finished-at="2020-07-20T12:00:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReviewerAccess -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.moodys.meerqats.testcases.LoginAsReviewer@6debcae2]" name="teardown" is-config="true" duration-ms="1084" started-at="2020-07-20T12:00:25Z" finished-at="2020-07-20T12:00:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.moodys.meerqats.testcases.LoginAsReviewer -->
+      <class name="com.moodys.meerqats.testcases.LoginAsManager">
+        <test-method status="PASS" signature="Base()[pri:0, instance:com.moodys.meerqats.testcases.LoginAsManager@7e0babb1]" name="Base" is-config="true" duration-ms="8110" started-at="2020-07-20T11:59:56Z" finished-at="2020-07-20T12:00:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Base -->
+        <test-method status="PASS" signature="ManagerAccess()[pri:0, instance:com.moodys.meerqats.testcases.LoginAsManager@7e0babb1]" name="ManagerAccess" duration-ms="5533" started-at="2020-07-20T12:00:04Z" finished-at="2020-07-20T12:00:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ManagerAccess -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.moodys.meerqats.testcases.LoginAsManager@7e0babb1]" name="teardown" is-config="true" duration-ms="884" started-at="2020-07-20T12:00:10Z" finished-at="2020-07-20T12:00:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.moodys.meerqats.testcases.LoginAsManager -->
+    </test> <!-- BasicFunctionality -->
+  </suite> <!-- MeerQATS -->
+</testng-results>

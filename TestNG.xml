@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MeerQATS">
+    <test name="BasicFunctionality">
+         <classes>
+             <class name="com.moodys.meerqats.testcases.LoginAsManager"/>
+             <class name="com.moodys.meerqats.testcases.LoginAsReviewer"/>
+             <class name="com.moodys.meerqats.testcases.LoginAsAdmin"/>
+          </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->
