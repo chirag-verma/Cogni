@@ -13,7 +13,7 @@ public class BaseClass {
 	public void Base() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Users/VermaC/Downloads/chromedriver_win32 (1)/chromedriver.exe");
+				"D:\\Users/VermaC/git/MeerQATS/Drivers/chromedriver.exe");
 		/* Launching the browser? */
 		driver = new ChromeDriver();
 
