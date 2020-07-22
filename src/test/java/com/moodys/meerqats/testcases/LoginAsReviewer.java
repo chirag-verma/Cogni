@@ -16,9 +16,9 @@ public class LoginAsReviewer extends BaseClass {
 	@Test
 	public void ReviewerAccess() throws InterruptedException {
 
-		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys("test@rqms");
+		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys(prop.getProperty("ReviewerUserName"));
 
-		driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys("rules");
+		driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys(prop.getProperty("ReviewerPassword"));
 
 		driver.findElement(By.xpath("//*[@id='sub']")).click();
 
@@ -26,7 +26,7 @@ public class LoginAsReviewer extends BaseClass {
 
 		System.out.println("Total number of Menu Items access with Reviewer are" + " " + ReviewerMenuItems.size());
 
-		Assert.assertEquals(ReviewerMenuItems.size(), 4);
+		Assert.assertEquals(ReviewerMenuItems.size(), Integer.parseInt(prop.getProperty("ReviewerMenuItemsaccess")));
 
 		System.out.println("Here are the list of Meny Items access with Reviewer");
 

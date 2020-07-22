@@ -2,10 +2,11 @@ package com.moodys.meerqats.testcases;
 
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
@@ -16,18 +17,18 @@ public class LoginAsAdmin extends BaseClass {
 
 	@Test
 	public void ManagerAccess() throws InterruptedException {
+		
 
-		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys("testadmin@qats");
+		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys(prop.getProperty("AdminUserName"));
 
-		driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys("rules123");
+		driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys(prop.getProperty("AdminPassword"));
 
 		driver.findElement(By.xpath("//*[@id='sub']")).click();
 		Thread.sleep(2000);
+
 		List<WebElement> AdminMenuItems = driver.findElements(By.xpath("//span[@class='menu-item-title']"));
-
-		int Total = AdminMenuItems.size();
-
 		
+		int Total= AdminMenuItems.size();
 
 		System.out.println("-------------------------------------------------------------");
 
@@ -44,6 +45,8 @@ public class LoginAsAdmin extends BaseClass {
 			if (MenuItem.getText().equals("Manage Questionnaire") || MenuItem.getText().equals("Admin Utils")) {
 
 				MenuItem.click();
+				
+				Thread.sleep(2000);
 
 				it.next();
 
@@ -56,8 +59,9 @@ public class LoginAsAdmin extends BaseClass {
 		System.out.println("-------------------------------------------------------------");
 
 		System.out.println("Total number of Menu Items access with Admin are" + " " + Total);
-		
-		Assert.assertEquals(Total, 14);
+
+		Assert.assertEquals(Total, Integer.parseInt(prop.getProperty("AdminMenuItemaccess")));
+
 	}
 
 	@AfterClass

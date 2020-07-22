@@ -17,9 +17,9 @@ public class LoginAsManager extends BaseClass {
 	@Test
 	public void ManagerAccess() throws InterruptedException {
 
-		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys("testmanager@rqms");
+		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys(prop.getProperty("ManagerUserName"));
 
-		driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys("rules");
+		driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys(prop.getProperty("ManagerPassword"));
 
 		driver.findElement(By.xpath("//*[@id='sub']")).click();
 
@@ -27,7 +27,7 @@ public class LoginAsManager extends BaseClass {
 
 		System.out.println("Total number of Menu Items access with Manager are" + " " + ManagerMenuItems.size());
 
-		Assert.assertEquals(ManagerMenuItems.size(), 6);
+		Assert.assertEquals(ManagerMenuItems.size(), Integer.parseInt(prop.getProperty("ManagerMenuItemsaccess")));
 
 		System.out.println("Here are the list of Meny Items access with Manager");
 
