@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.moodys.meerqats.testcases.LoginAsManager">
+      <class name="com.moodys.meerqats.QATSManager.ManagerCanReopenResolvedReviews">
         <methods>
           <include name="Base"/>
-          <include name="teardown"/>
-          <include name="ManagerAccess"/>
+          <include name="OpenResolvedReviews"/>
         </methods>
-      </class> <!-- com.moodys.meerqats.testcases.LoginAsManager -->
+      </class> <!-- com.moodys.meerqats.QATSManager.ManagerCanReopenResolvedReviews -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

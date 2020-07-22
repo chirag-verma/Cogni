@@ -1,29 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [MeerQATS]">
-  <test thread-count="5" name="BasicFunctionality(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.moodys.meerqats.QATSManager.LoginAsManager">
+      <class name="com.moodys.meerqats.QATSManager.ManagerCanReopenResolvedReviews">
         <methods>
           <include name="Base"/>
-          <include name="teardown"/>
-          <include name="ManagerAccess"/>
+          <include name="OpenResolvedReviews"/>
         </methods>
-      </class> <!-- com.moodys.meerqats.QATSManager.LoginAsManager -->
-      <class name="com.moodys.meerqats.QATSReviewer.LoginAsReviewer">
-        <methods>
-          <include name="Base"/>
-          <include name="teardown"/>
-          <include name="ReviewerAccess"/>
-        </methods>
-      </class> <!-- com.moodys.meerqats.QATSReviewer.LoginAsReviewer -->
-      <class name="com.moodys.meerqats.QATSAdmin.LoginAsAdmin">
-        <methods>
-          <include name="Base"/>
-          <include name="ManagerAccess"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.moodys.meerqats.QATSAdmin.LoginAsAdmin -->
+      </class> <!-- com.moodys.meerqats.QATSManager.ManagerCanReopenResolvedReviews -->
     </classes>
-  </test> <!-- BasicFunctionality(failed) -->
-</suite> <!-- Failed suite [MeerQATS] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
