@@ -1,4 +1,4 @@
-package com.moodys.meerqats.testcases;
+package com.moodys.meerqats.QATSReviewer;
 
 import java.util.Iterator;
 import java.util.List;

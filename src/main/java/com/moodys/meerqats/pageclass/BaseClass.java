@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeClass;
 public class BaseClass {
 	public WebDriver driver;
 	
-	public Properties prop;
+	 public Properties prop;
 public JavascriptExecutor Js;
 	@BeforeClass
 	public  void Base() throws IOException {

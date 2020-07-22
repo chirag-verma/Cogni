@@ -3,13 +3,27 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [MeerQATS]">
   <test thread-count="5" name="BasicFunctionality(failed)">
     <classes>
-      <class name="com.moodys.meerqats.testcases.LoginAsReviewer">
+      <class name="com.moodys.meerqats.QATSManager.LoginAsManager">
         <methods>
           <include name="Base"/>
+          <include name="teardown"/>
+          <include name="ManagerAccess"/>
+        </methods>
+      </class> <!-- com.moodys.meerqats.QATSManager.LoginAsManager -->
+      <class name="com.moodys.meerqats.QATSReviewer.LoginAsReviewer">
+        <methods>
+          <include name="Base"/>
+          <include name="teardown"/>
           <include name="ReviewerAccess"/>
+        </methods>
+      </class> <!-- com.moodys.meerqats.QATSReviewer.LoginAsReviewer -->
+      <class name="com.moodys.meerqats.QATSAdmin.LoginAsAdmin">
+        <methods>
+          <include name="Base"/>
+          <include name="ManagerAccess"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.moodys.meerqats.testcases.LoginAsReviewer -->
+      </class> <!-- com.moodys.meerqats.QATSAdmin.LoginAsAdmin -->
     </classes>
   </test> <!-- BasicFunctionality(failed) -->
 </suite> <!-- Failed suite [MeerQATS] -->

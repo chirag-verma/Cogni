@@ -3,9 +3,9 @@
 <suite name="MeerQATS">
     <test name="BasicFunctionality">
          <classes>
-             <class name="com.moodys.meerqats.testcases.LoginAsManager"/>
-             <class name="com.moodys.meerqats.testcases.LoginAsReviewer"/>
-             <class name="com.moodys.meerqats.testcases.LoginAsAdmin"/>
+             <class name="com.moodys.meerqats.QATSManager.LoginAsManager"/>
+             <class name="com.moodys.meerqats.QATSReviewer.LoginAsReviewer"/>
+             <class name="com.moodys.meerqats.QATSAdmin.LoginAsAdmin"/>
           </classes>
      </test> <!-- Test -->
 </suite> <!-- Suite -->
