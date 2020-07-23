@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23942" started-at="2020-07-22T18:34:07Z" finished-at="2020-07-22T18:34:31Z">
+  <suite name="Default suite" duration-ms="28995" started-at="2020-07-23T17:32:20Z" finished-at="2020-07-23T17:32:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23942" started-at="2020-07-22T18:34:07Z" finished-at="2020-07-22T18:34:31Z">
-      <class name="com.moodys.meerqats.QATSManager.ManagerCanReopenResolvedReviews">
-        <test-method status="PASS" signature="Base()[pri:0, instance:com.moodys.meerqats.QATSManager.ManagerCanReopenResolvedReviews@cc285f4]" name="Base" is-config="true" duration-ms="7633" started-at="2020-07-22T18:34:07Z" finished-at="2020-07-22T18:34:14Z">
+    <test name="Default test" duration-ms="28995" started-at="2020-07-23T17:32:20Z" finished-at="2020-07-23T17:32:49Z">
+      <class name="com.moodys.meerqats.QATSManager.CreateManualCase">
+        <test-method status="PASS" signature="Base()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase@55f3ddb1]" name="Base" is-config="true" duration-ms="7781" started-at="2020-07-23T17:32:20Z" finished-at="2020-07-23T17:32:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="PASS" signature="OpenResolvedReviews()[pri:0, instance:com.moodys.meerqats.QATSManager.ManagerCanReopenResolvedReviews@cc285f4]" name="OpenResolvedReviews" duration-ms="16286" started-at="2020-07-22T18:34:15Z" finished-at="2020-07-22T18:34:31Z">
+        <test-method status="PASS" signature="ManualCase()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase@55f3ddb1]" name="ManualCase" duration-ms="21192" started-at="2020-07-23T17:32:27Z" finished-at="2020-07-23T17:32:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenResolvedReviews -->
-      </class> <!-- com.moodys.meerqats.QATSManager.ManagerCanReopenResolvedReviews -->
+        </test-method> <!-- ManualCase -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase@55f3ddb1]" name="teardown" is-config="true" duration-ms="0" started-at="2020-07-23T17:32:49Z" finished-at="2020-07-23T17:32:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.moodys.meerqats.QATSManager.CreateManualCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
