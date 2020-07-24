@@ -83,12 +83,12 @@ public class CreateManualCase extends BaseClass {
 			System.out.println("****************************************************************************************");
 
 			System.out.println(
-					"Email Address of Lead Analyst " + prop.getProperty("FirstName").trim() + " is " + EmailAddress.getText());
+					"Email Address of Lead Analyst " + prop.getProperty("FirstName").trim()+ " "+prop.getProperty("LastName").trim()+ " is " + EmailAddress.getText());
 		} catch (Exception e) {
 			
 			System.out.println("****************************************************************************************");
 			// TODO Auto-generated catch block
-			System.out.println("Email Address of "+prop.getProperty("FirstName").trim()+" is not populated");
+			System.out.println("Email Address of "+prop.getProperty("FirstName").trim()+ " "+prop.getProperty("LastName").trim()+" is not populated");
 		}
 
 		Thread.sleep(4000);

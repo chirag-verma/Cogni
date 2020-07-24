@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43940" started-at="2020-07-24T12:25:47Z" finished-at="2020-07-24T12:26:31Z">
+  <suite name="Default suite" duration-ms="55337" started-at="2020-07-24T16:45:03Z" finished-at="2020-07-24T16:45:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43940" started-at="2020-07-24T12:25:47Z" finished-at="2020-07-24T12:26:31Z">
+    <test name="Default test" duration-ms="55337" started-at="2020-07-24T16:45:03Z" finished-at="2020-07-24T16:45:58Z">
       <class name="com.moodys.meerqats.QATSManager.CreateManualCase">
-        <test-method status="PASS" signature="Base()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase@4b9e13df]" name="Base" is-config="true" duration-ms="7665" started-at="2020-07-24T12:25:47Z" finished-at="2020-07-24T12:25:54Z">
+        <test-method status="PASS" signature="Base()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase@4b9e13df]" name="Base" is-config="true" duration-ms="7401" started-at="2020-07-24T16:45:03Z" finished-at="2020-07-24T16:45:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="PASS" signature="ManualCase()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase@4b9e13df]" name="ManualCase" duration-ms="35359" started-at="2020-07-24T12:25:54Z" finished-at="2020-07-24T12:26:30Z">
+        <test-method status="PASS" signature="ManualCase()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase@4b9e13df]" name="ManualCase" duration-ms="47023" started-at="2020-07-24T16:45:10Z" finished-at="2020-07-24T16:45:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ManualCase -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase@4b9e13df]" name="teardown" is-config="true" duration-ms="896" started-at="2020-07-24T12:26:30Z" finished-at="2020-07-24T12:26:31Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase@4b9e13df]" name="teardown" is-config="true" duration-ms="890" started-at="2020-07-24T16:45:57Z" finished-at="2020-07-24T16:45:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
