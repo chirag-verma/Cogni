@@ -19,3 +19,33 @@
 [0723/202027.606:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0723/202027.606:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0723/202027.606:ERROR:exception_snapshot_win.cc(98)] thread ID 25388 not found in process
+[0724/161942.240:ERROR:file_io_win.cc(170)] CreateFile D:\Users\VermaC\AppData\Local\Temp\1\scoped_dir36148_1125375667\Crashpad\reports\a957e878-691f-4d92-8667-5868bcde39cf.dmp: The system cannot find the path specified. (0x3)
+[0724/161942.246:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0724/161942.268:ERROR:file_io_win.cc(170)] CreateFile D:\Users\VermaC\AppData\Local\Temp\1\scoped_dir34516_832311002\Crashpad\reports\34cd2456-3f15-45a8-8d59-bec5e3ea1c6c.dmp: The system cannot find the path specified. (0x3)
+[0724/161942.272:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0724/165744.082:ERROR:process_reader_win.cc(188)] ResumeThread: The parameter is incorrect. (0x57)
+[0724/165744.086:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.086:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.086:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.086:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.086:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.086:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.086:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.086:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.086:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.086:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.086:ERROR:exception_snapshot_win.cc(98)] thread ID 36628 not found in process
+[0724/165744.087:ERROR:process_reader_win.cc(188)] ResumeThread: The parameter is incorrect. (0x57)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0724/165744.091:ERROR:exception_snapshot_win.cc(98)] thread ID 31064 not found in process
