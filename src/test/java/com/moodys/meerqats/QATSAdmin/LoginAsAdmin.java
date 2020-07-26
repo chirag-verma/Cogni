@@ -16,7 +16,7 @@ import com.moodys.meerqats.pageclass.BaseClass;
 public class LoginAsAdmin extends BaseClass {
 
 	@Test
-	public void ManagerAccess() throws InterruptedException {
+	public void AdminAccess() throws InterruptedException {
 		
 
 		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys(prop.getProperty("AdminUserName"));
@@ -61,13 +61,12 @@ public class LoginAsAdmin extends BaseClass {
 		System.out.println("Total number of Menu Items access with Admin are" + " " + Total);
 
 		Assert.assertEquals(Total, Integer.parseInt(prop.getProperty("AdminMenuItemaccess")));
+		
+		Assert.assertEquals(true, false);
 
 	}
+	
+	
 
-	@AfterClass
-	public void teardown() {
-
-		driver.quit();
-
-	}
+	
 }

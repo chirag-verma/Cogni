@@ -40,11 +40,6 @@ public class LoginAsManager extends BaseClass {
 		}
 	}
 
-	@AfterClass
-	public void teardown() {
-
-	driver.quit();
-
-	}
+	
 
 }

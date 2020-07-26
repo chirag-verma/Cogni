@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MeerQATS]">
+  <listeners>
+    <listener class-name="com.moodys.meerqats.pageclass.ExtentReporter"/>
+  </listeners>
+  <test thread-count="5" name="BasicFunctionality(failed)">
     <classes>
-      <class name="com.moodys.meerqats.QATSManager.CreateManualCase">
+      <class name="com.moodys.meerqats.QATSAdmin.LoginAsAdmin">
         <methods>
           <include name="Base"/>
-          <include name="ManualCase"/>
-          <include name="teardown"/>
+          <include name="tearDown"/>
+          <include name="AdminAccess"/>
         </methods>
-      </class> <!-- com.moodys.meerqats.QATSManager.CreateManualCase -->
+      </class> <!-- com.moodys.meerqats.QATSAdmin.LoginAsAdmin -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- BasicFunctionality(failed) -->
+</suite> <!-- Failed suite [MeerQATS] -->
