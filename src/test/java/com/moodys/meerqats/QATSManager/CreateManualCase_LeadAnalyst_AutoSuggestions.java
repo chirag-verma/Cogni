@@ -1,6 +1,5 @@
 package com.moodys.meerqats.QATSManager;
 
-import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -12,10 +11,10 @@ import org.testng.annotations.Test;
 
 import com.moodys.meerqats.pageclass.BaseClass;
 
-public class CreateManualCase extends BaseClass {
+public class CreateManualCase_LeadAnalyst_AutoSuggestions extends BaseClass {
 
 	@Test
-	public void ManualCase() throws InterruptedException {
+	public void ManualCase_LeadAnalyst_Suggestion() throws InterruptedException {
 
 		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys(prop.getProperty("ManagerUserName"));
 

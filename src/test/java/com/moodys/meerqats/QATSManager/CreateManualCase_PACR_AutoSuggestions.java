@@ -14,7 +14,7 @@ import com.moodys.meerqats.pageclass.BaseClass;
 public class CreateManualCase_PACR_AutoSuggestions extends BaseClass {
 
 	@Test
-	public void PACR() throws InterruptedException {
+	public void ManualCase_PACR_Suggestions() throws InterruptedException {
 		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys(prop.getProperty("ManagerUserName"));
 
 		driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys(prop.getProperty("ManagerPassword"));

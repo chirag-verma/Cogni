@@ -62,8 +62,14 @@ public class LoginAsAdmin extends BaseClass {
 
 		Assert.assertEquals(Total, Integer.parseInt(prop.getProperty("AdminMenuItemaccess")));
 		
-		Assert.assertEquals(true, false);
 
+
+	}
+	
+	@AfterClass
+	public void teardown(){
+		
+		driver.quit();
 	}
 	
 	

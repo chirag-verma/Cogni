@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MeerQATS">
-              <span class="suite-name border-failed">MeerQATS</span>
+              <span class="suite-name border-passed">MeerQATS</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-MeerQATS">
-                    <span>D:\Users\VermaC\git\MeerQATS1\TestNG.xml</span>
+                    <span>D:\Users\VermaC\git\MeerQATS2\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-MeerQATS" class="hide-methods failed suite-MeerQATS"> (hide)</a> <!-- hide-methods failed suite-MeerQATS -->
-                      <a href="#" panel-name="suite-MeerQATS" class="show-methods failed suite-MeerQATS"> (show)</a> <!-- show-methods failed suite-MeerQATS -->
-                    </span>
-                    <div class="method-list-content failed suite-MeerQATS">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSAdmin.LoginAsAdmin" hash-for-method="AdminAccess">AdminAccess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-MeerQATS -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,27 @@
                     <div class="method-list-content passed suite-MeerQATS">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSAdmin.LoginAsAdmin" hash-for-method="AdminAccess">AdminAccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.LoginAsManager" hash-for-method="ManagerAccess">ManagerAccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions" hash-for-method="ManualCase_LeadAnalystSuggestion">ManualCase_LeadAnalystSuggestion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions" hash-for-method="ManualCase_PACRSuggestions">ManualCase_PACRSuggestions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions" hash-for-method="ManualCase_RCChair_Suggestions">ManualCase_RCChair_Suggestions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -136,9 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MeerQATS" class="panel MeerQATS">
-          <div class="suite-MeerQATS-class-failed">
+          <div class="suite-MeerQATS-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.moodys.meerqats.QATSAdmin.LoginAsAdmin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -147,25 +153,36 @@
                   <a name="AdminAccess">
                   </a> <!-- AdminAccess -->
                   <span class="method-name">AdminAccess</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at com.moodys.meerqats.QATSAdmin.LoginAsAdmin.AdminAccess(LoginAsAdmin.java:65)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MeerQATS-class-failed -->
+          </div> <!-- suite-MeerQATS-class-passed -->
           <div class="suite-MeerQATS-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.moodys.meerqats.QATSReviewer.LoginAsReviewer</span>
+              <span class="class-name">com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ReviewerAccess">
-                  </a> <!-- ReviewerAccess -->
-                  <span class="method-name">ReviewerAccess</span>
+                  <a name="ManualCase_LeadAnalystSuggestion">
+                  </a> <!-- ManualCase_LeadAnalystSuggestion -->
+                  <span class="method-name">ManualCase_LeadAnalystSuggestion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MeerQATS-class-passed -->
+          <div class="suite-MeerQATS-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ManualCase_PACRSuggestions">
+                  </a> <!-- ManualCase_PACRSuggestions -->
+                  <span class="method-name">ManualCase_PACRSuggestions</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,10 +202,40 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-MeerQATS-class-passed -->
+          <div class="suite-MeerQATS-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ManualCase_RCChair_Suggestions">
+                  </a> <!-- ManualCase_RCChair_Suggestions -->
+                  <span class="method-name">ManualCase_RCChair_Suggestions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MeerQATS-class-passed -->
+          <div class="suite-MeerQATS-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.moodys.meerqats.QATSReviewer.LoginAsReviewer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReviewerAccess">
+                  </a> <!-- ReviewerAccess -->
+                  <span class="method-name">ReviewerAccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MeerQATS-class-passed -->
         </div> <!-- panel MeerQATS -->
         <div panel-name="test-xml-MeerQATS" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Users\VermaC\git\MeerQATS1\TestNG.xml</span>
+            <span class="header-content">D:\Users\VermaC\git\MeerQATS2\TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -203,6 +250,9 @@
       &lt;class name=&quot;com.moodys.meerqats.QATSManager.LoginAsManager&quot;/&gt;
       &lt;class name=&quot;com.moodys.meerqats.QATSReviewer.LoginAsReviewer&quot;/&gt;
       &lt;class name=&quot;com.moodys.meerqats.QATSAdmin.LoginAsAdmin&quot;/&gt;
+      &lt;class name=&quot;com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions&quot;/&gt;
+      &lt;class name=&quot;com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions&quot;/&gt;
+      &lt;class name=&quot;com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BasicFunctionality --&gt;
 &lt;/suite&gt; &lt;!-- MeerQATS --&gt;
@@ -216,7 +266,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BasicFunctionality (3 classes)</span>
+                <span class="test-name">BasicFunctionality (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,24 +292,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AdminAccess')
-data.setCell(0, 2, 'com.moodys.meerqats.QATSAdmin.LoginAsAdmin')
-data.setCell(0, 3, 12297);
+data.setCell(0, 1, 'ManualCase_LeadAnalystSuggestion')
+data.setCell(0, 2, 'com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions')
+data.setCell(0, 3, 33057);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ReviewerAccess')
-data.setCell(1, 2, 'com.moodys.meerqats.QATSReviewer.LoginAsReviewer')
-data.setCell(1, 3, 5717);
+data.setCell(1, 1, 'ManualCase_PACRSuggestions')
+data.setCell(1, 2, 'com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions')
+data.setCell(1, 3, 31251);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ManagerAccess')
-data.setCell(2, 2, 'com.moodys.meerqats.QATSManager.LoginAsManager')
-data.setCell(2, 3, 4897);
+data.setCell(2, 1, 'ManualCase_RCChair_Suggestions')
+data.setCell(2, 2, 'com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions')
+data.setCell(2, 3, 31051);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AdminAccess')
+data.setCell(3, 2, 'com.moodys.meerqats.QATSAdmin.LoginAsAdmin')
+data.setCell(3, 3, 16142);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ManagerAccess')
+data.setCell(4, 2, 'com.moodys.meerqats.QATSManager.LoginAsManager')
+data.setCell(4, 3, 10712);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ReviewerAccess')
+data.setCell(5, 2, 'com.moodys.meerqats.QATSReviewer.LoginAsReviewer')
+data.setCell(5, 3, 6764);
 window.suiteTableData['MeerQATS']= { tableData: data, tableDiv: 'times-div-MeerQATS'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-MeerQATS">
               </div> <!-- times-div-MeerQATS -->
             </div> <!-- times-div -->
@@ -292,32 +354,87 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ManagerAccess</span>
-                <span class="method-start">7587 ms</span>
+                <span class="method-start">7624 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">18338 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moodys.meerqats.QATSReviewer.LoginAsReviewer</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Base</span>
-                <span class="method-start">12491 ms</span>
+                <span class="method-start">19218 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ReviewerAccess</span>
-                <span class="method-start">19200 ms</span>
+                <span class="method-start">25692 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">32457 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moodys.meerqats.QATSAdmin.LoginAsAdmin</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Base</span>
-                <span class="method-start">24922 ms</span>
+                <span class="method-start">33326 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">AdminAccess</span>
-                <span class="method-start">31597 ms</span>
+                <span class="method-start">39592 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">55735 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Base</span>
+                <span class="method-start">56617 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ManualCase_LeadAnalystSuggestion</span>
+                <span class="method-start">63367 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">96425 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Base</span>
+                <span class="method-start">97310 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ManualCase_RCChair_Suggestions</span>
+                <span class="method-start">104013 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">135065 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Base</span>
+                <span class="method-start">135962 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ManualCase_PACRSuggestions</span>
+                <span class="method-start">142105 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">173357 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

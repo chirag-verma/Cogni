@@ -39,6 +39,11 @@ public class LoginAsReviewer extends BaseClass {
 		}
 	}
 
+	@AfterClass
+	public void teardown(){
+		
+		driver.quit();
+	}
 	
 
 }

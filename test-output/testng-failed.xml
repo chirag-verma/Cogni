@@ -9,10 +9,17 @@
       <class name="com.moodys.meerqats.QATSAdmin.LoginAsAdmin">
         <methods>
           <include name="Base"/>
-          <include name="tearDown"/>
           <include name="AdminAccess"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.moodys.meerqats.QATSAdmin.LoginAsAdmin -->
+      <class name="com.moodys.meerqats.QATSManager.LoginAsManager">
+        <methods>
+          <include name="Base"/>
+          <include name="teardown"/>
+          <include name="ManagerAccess"/>
+        </methods>
+      </class> <!-- com.moodys.meerqats.QATSManager.LoginAsManager -->
     </classes>
   </test> <!-- BasicFunctionality(failed) -->
 </suite> <!-- Failed suite [MeerQATS] -->

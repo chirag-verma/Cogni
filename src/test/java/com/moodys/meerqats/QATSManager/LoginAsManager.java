@@ -4,7 +4,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -38,6 +37,14 @@ public class LoginAsManager extends BaseClass {
 			System.out.println(it.next().getText());
 
 		}
+		
+
+	}
+	
+	@AfterClass
+	public void teardown(){
+		
+		driver.quit();
 	}
 
 	

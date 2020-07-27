@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
 
 import com.moodys.meerqats.pageclass.BaseClass;
 
-public class CreateManualCase_RCChair extends BaseClass {
+public class CreateManualCase_RCChair_AutoSuggestions extends BaseClass {
 	
 	@Test
-	public void RCChair() throws InterruptedException{
+	public void ManualCase_RCChair_Suggestions() throws InterruptedException{
 	driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys(prop.getProperty("ManagerUserName"));
 
 	driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys(prop.getProperty("ManagerPassword"));

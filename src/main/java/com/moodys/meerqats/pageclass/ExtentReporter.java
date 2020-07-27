@@ -18,8 +18,9 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class ExtentReporter implements IReporter {
-	private ExtentReports extent;
+public class ExtentReporter extends BaseClass implements IReporter {
+	ExtentReports extent;
+	ExtentTest test;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 		extent = new ExtentReports(outputDirectory + File.separator + "Extent.html", true);
@@ -33,18 +34,20 @@ public class ExtentReporter implements IReporter {
 				buildTestNodes(context.getPassedTests(), LogStatus.PASS);
 				buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
 				buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
+
 			}
 		}
 
 		extent.flush();
 		extent.close();
+
 	}
 
 	private void buildTestNodes(IResultMap tests, LogStatus status) {
-		ExtentTest test;
 
 		if (tests.size() > 0) {
 			for (ITestResult result : tests.getAllResults()) {
+
 				test = extent.startTest(result.getMethod().getMethodName());
 
 				test.setStartedTime(getTime(result.getStartMillis()));
@@ -69,4 +72,5 @@ public class ExtentReporter implements IReporter {
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();
 	}
+
 }
