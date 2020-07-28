@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MeerQATS">
-              <span class="suite-name border-passed">MeerQATS</span>
+              <span class="suite-name border-failed">MeerQATS</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-MeerQATS">
-                    <span>D:\Users\VermaC\git\MeerQATS2\TestNG.xml</span>
+                    <span>D:\Users\VermaC\git\MeerQATS2\test-output\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 5 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MeerQATS" class="hide-methods failed suite-MeerQATS"> (hide)</a> <!-- hide-methods failed suite-MeerQATS -->
+                      <a href="#" panel-name="suite-MeerQATS" class="show-methods failed suite-MeerQATS"> (show)</a> <!-- show-methods failed suite-MeerQATS -->
+                    </span>
+                    <div class="method-list-content failed suite-MeerQATS">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSAdmin.LoginAsAdmin" hash-for-method="AdminAccess">AdminAccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.LoginAsManager" hash-for-method="ManagerAccess">ManagerAccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions" hash-for-method="ManualCase_LeadAnalyst_Suggestion">ManualCase_LeadAnalyst_Suggestion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions" hash-for-method="ManualCase_PACR_Suggestions">ManualCase_PACR_Suggestions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions" hash-for-method="ManualCase_RCChair_Suggestions">ManualCase_RCChair_Suggestions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MeerQATS -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,31 +134,6 @@
                       <a href="#" panel-name="suite-MeerQATS" class="show-methods passed suite-MeerQATS"> (show)</a> <!-- show-methods passed suite-MeerQATS -->
                     </span>
                     <div class="method-list-content passed suite-MeerQATS">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSAdmin.LoginAsAdmin" hash-for-method="AdminAccess">AdminAccess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.LoginAsManager" hash-for-method="ManagerAccess">ManagerAccess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions" hash-for-method="ManualCase_LeadAnalystSuggestion">ManualCase_LeadAnalystSuggestion</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions" hash-for-method="ManualCase_PACRSuggestions">ManualCase_PACRSuggestions</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions" hash-for-method="ManualCase_RCChair_Suggestions">ManualCase_RCChair_Suggestions</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-MeerQATS" title="com.moodys.meerqats.QATSReviewer.LoginAsReviewer" hash-for-method="ReviewerAccess">ReviewerAccess</a> <!-- method navigator-link -->
@@ -142,9 +151,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MeerQATS" class="panel MeerQATS">
-          <div class="suite-MeerQATS-class-passed">
+          <div class="suite-MeerQATS-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.moodys.meerqats.QATSAdmin.LoginAsAdmin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -153,43 +162,108 @@
                   <a name="AdminAccess">
                   </a> <!-- AdminAccess -->
                   <span class="method-name">AdminAccess</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-MDBLIRD&apos;, ip: &apos;10.49.146.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: D:\Users\VermaC\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 18cdd641f01d390766d3da900573323f
+*** Element info: {Using=xpath, value=//span[@class=&apos;menu-item-title&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at com.moodys.meerqats.QATSAdmin.LoginAsAdmin.AdminAccess(LoginAsAdmin.java:29)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MeerQATS-class-passed -->
-          <div class="suite-MeerQATS-class-passed">
+          </div> <!-- suite-MeerQATS-class-failed -->
+          <div class="suite-MeerQATS-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ManualCase_LeadAnalystSuggestion">
-                  </a> <!-- ManualCase_LeadAnalystSuggestion -->
-                  <span class="method-name">ManualCase_LeadAnalystSuggestion</span>
+                  <a name="ManualCase_LeadAnalyst_Suggestion">
+                  </a> <!-- ManualCase_LeadAnalyst_Suggestion -->
+                  <span class="method-name">ManualCase_LeadAnalyst_Suggestion</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.89)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-MDBLIRD&apos;, ip: &apos;10.49.146.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: D:\Users\VermaC\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ae3fad754df50e49566acdb7223e9291
+*** Element info: {Using=xpath, value=//*[@id=&apos;txtUserID&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions.ManualCase_LeadAnalyst_Suggestion(CreateManualCase_LeadAnalyst_AutoSuggestions.java:19)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MeerQATS-class-passed -->
-          <div class="suite-MeerQATS-class-passed">
+          </div> <!-- suite-MeerQATS-class-failed -->
+          <div class="suite-MeerQATS-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ManualCase_PACRSuggestions">
-                  </a> <!-- ManualCase_PACRSuggestions -->
-                  <span class="method-name">ManualCase_PACRSuggestions</span>
+                  <a name="ManualCase_PACR_Suggestions">
+                  </a> <!-- ManualCase_PACR_Suggestions -->
+                  <span class="method-name">ManualCase_PACR_Suggestions</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.89)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-MDBLIRD&apos;, ip: &apos;10.49.146.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: D:\Users\VermaC\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8444f8f9c57bde766b2daf4289f6f60a
+*** Element info: {Using=xpath, value=//*[@id=&apos;txtUserID&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions.ManualCase_PACR_Suggestions(CreateManualCase_PACR_AutoSuggestions.java:18)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MeerQATS-class-passed -->
-          <div class="suite-MeerQATS-class-passed">
+          </div> <!-- suite-MeerQATS-class-failed -->
+          <div class="suite-MeerQATS-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.moodys.meerqats.QATSManager.LoginAsManager</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -198,13 +272,34 @@
                   <a name="ManagerAccess">
                   </a> <!-- ManagerAccess -->
                   <span class="method-name">ManagerAccess</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-MDBLIRD&apos;, ip: &apos;10.49.146.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: D:\Users\VermaC\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58372}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8952eae48c346f9d70384de872474d6c
+*** Element info: {Using=xpath, value=//*[@id=&apos;txtUserID&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.moodys.meerqats.QATSManager.LoginAsManager.ManagerAccess(LoginAsManager.java:19)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MeerQATS-class-passed -->
-          <div class="suite-MeerQATS-class-passed">
+          </div> <!-- suite-MeerQATS-class-failed -->
+          <div class="suite-MeerQATS-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -213,10 +308,32 @@
                   <a name="ManualCase_RCChair_Suggestions">
                   </a> <!-- ManualCase_RCChair_Suggestions -->
                   <span class="method-name">ManualCase_RCChair_Suggestions</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.89)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-MDBLIRD&apos;, ip: &apos;10.49.146.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: D:\Users\VermaC\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 61eed7dad539747d85eef21070c05674
+*** Element info: {Using=xpath, value=//*[@id=&apos;txtUserID&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions.ManualCase_RCChair_Suggestions(CreateManualCase_RCChair_AutoSuggestions.java:18)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MeerQATS-class-passed -->
+          </div> <!-- suite-MeerQATS-class-failed -->
           <div class="suite-MeerQATS-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -235,7 +352,7 @@
         </div> <!-- panel MeerQATS -->
         <div panel-name="test-xml-MeerQATS" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Users\VermaC\git\MeerQATS2\TestNG.xml</span>
+            <span class="header-content">D:\Users\VermaC\git\MeerQATS2\test-output\TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -294,34 +411,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ManualCase_LeadAnalystSuggestion')
-data.setCell(0, 2, 'com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions')
-data.setCell(0, 3, 33057);
+data.setCell(0, 1, 'AdminAccess')
+data.setCell(0, 2, 'com.moodys.meerqats.QATSAdmin.LoginAsAdmin')
+data.setCell(0, 3, 15474);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ManualCase_PACRSuggestions')
-data.setCell(1, 2, 'com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions')
-data.setCell(1, 3, 31251);
+data.setCell(1, 1, 'ReviewerAccess')
+data.setCell(1, 2, 'com.moodys.meerqats.QATSReviewer.LoginAsReviewer')
+data.setCell(1, 3, 10951);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ManualCase_RCChair_Suggestions')
-data.setCell(2, 2, 'com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions')
-data.setCell(2, 3, 31051);
+data.setCell(2, 1, 'ManagerAccess')
+data.setCell(2, 2, 'com.moodys.meerqats.QATSManager.LoginAsManager')
+data.setCell(2, 3, 4037);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AdminAccess')
-data.setCell(3, 2, 'com.moodys.meerqats.QATSAdmin.LoginAsAdmin')
-data.setCell(3, 3, 16142);
+data.setCell(3, 1, 'ManualCase_PACR_Suggestions')
+data.setCell(3, 2, 'com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions')
+data.setCell(3, 3, 13);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ManagerAccess')
-data.setCell(4, 2, 'com.moodys.meerqats.QATSManager.LoginAsManager')
-data.setCell(4, 3, 10712);
+data.setCell(4, 1, 'ManualCase_LeadAnalyst_Suggestion')
+data.setCell(4, 2, 'com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions')
+data.setCell(4, 3, 12);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ReviewerAccess')
-data.setCell(5, 2, 'com.moodys.meerqats.QATSReviewer.LoginAsReviewer')
-data.setCell(5, 3, 6764);
+data.setCell(5, 1, 'ManualCase_RCChair_Suggestions')
+data.setCell(5, 2, 'com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions')
+data.setCell(5, 3, 6);
 window.suiteTableData['MeerQATS']= { tableData: data, tableDiv: 'times-div-MeerQATS'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-MeerQATS">
               </div> <!-- times-div-MeerQATS -->
             </div> <!-- times-div -->
@@ -353,87 +470,97 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ManagerAccess</span>
-                <span class="method-start">7624 ms</span>
+                <span class="method-start">11726 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">18338 ms</span>
+                <span class="method-start">15779 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moodys.meerqats.QATSReviewer.LoginAsReviewer</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Base</span>
-                <span class="method-start">19218 ms</span>
+                <span class="method-start">16421 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ReviewerAccess</span>
-                <span class="method-start">25692 ms</span>
+                <span class="method-start">23880 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">32457 ms</span>
+                <span class="method-start">34832 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moodys.meerqats.QATSAdmin.LoginAsAdmin</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Base</span>
-                <span class="method-start">33326 ms</span>
+                <span class="method-start">35745 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">AdminAccess</span>
-                <span class="method-start">39592 ms</span>
+                <span class="method-start">42576 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">55735 ms</span>
+                <span class="method-start">58054 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Base</span>
-                <span class="method-start">56617 ms</span>
+                <span class="method-start">58788 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">ManualCase_LeadAnalystSuggestion</span>
-                <span class="method-start">63367 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ManualCase_LeadAnalyst_Suggestion</span>
+                <span class="method-start">65138 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">96425 ms</span>
+                <span class="method-start">65153 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Base</span>
-                <span class="method-start">97310 ms</span>
+                <span class="method-start">66007 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ManualCase_RCChair_Suggestions</span>
-                <span class="method-start">104013 ms</span>
+                <span class="method-start">72756 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">135065 ms</span>
+                <span class="method-start">72764 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Base</span>
-                <span class="method-start">135962 ms</span>
+                <span class="method-start">73940 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">ManualCase_PACRSuggestions</span>
-                <span class="method-start">142105 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ManualCase_PACR_Suggestions</span>
+                <span class="method-start">79517 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">173357 ms</span>
+                <span class="method-start">79538 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

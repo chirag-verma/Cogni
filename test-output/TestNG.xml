@@ -11,7 +11,7 @@
 		<classes>
 			<class name="com.moodys.meerqats.QATSManager.LoginAsManager" />
 			<class name="com.moodys.meerqats.QATSReviewer.LoginAsReviewer" />
-			<class name="com.moodys.meerqats.QATSAdmin.LoginAsAdmin" />
+			<class name="com.moodys.meerqats.QATSAdmin.LoginAsAdmin" /> 
 			<class
 				name="com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions" />
 			<class
