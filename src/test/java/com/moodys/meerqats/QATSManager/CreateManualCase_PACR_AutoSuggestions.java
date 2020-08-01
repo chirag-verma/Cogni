@@ -81,7 +81,7 @@ public class CreateManualCase_PACR_AutoSuggestions extends BaseClass {
 	@AfterClass
 	public void teardown() {
 
-	
+	driver.quit();
 
 	}
 
