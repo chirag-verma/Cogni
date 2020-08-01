@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
@@ -14,7 +15,7 @@ import com.moodys.meerqats.pageclass.BaseClass;
 public class CreateManualCase_LeadAnalyst_AutoSuggestions extends BaseClass {
 
 	@Test
-	public void ManualCase_LeadAnalyst_Suggestion() throws InterruptedException {
+	public void ManualCase_LeadAnalyst_Suggestions() throws InterruptedException {
 
 		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys(prop.getProperty("ManagerUserName"));
 
@@ -39,7 +40,6 @@ public class CreateManualCase_LeadAnalyst_AutoSuggestions extends BaseClass {
 		driver.findElement(By.xpath("//button[text()='Create Manual Case']")).click();
 
 		Thread.sleep(4000);
-		
 
 		driver.findElement(By.xpath("//label[text()='Lead Analyst Name']/following-sibling::div/input[@type='text']"))
 				.sendKeys(prop.getProperty("FirstName"));
@@ -51,8 +51,10 @@ public class CreateManualCase_LeadAnalyst_AutoSuggestions extends BaseClass {
 
 		System.out.println("****************************************************************************************");
 
-		System.out.println(
-				"Total number of names with first name " + prop.getProperty("FirstName").trim() + " are " + Names.size());
+		System.out.println("Total number of names with first name " + prop.getProperty("FirstName").trim() + " are "
+				+ Names.size());
+		
+		Assert.assertEquals(Names.size()>0, true);
 
 		System.out.println("****************************************************************************************");
 
@@ -72,6 +74,8 @@ public class CreateManualCase_LeadAnalyst_AutoSuggestions extends BaseClass {
 			}
 
 		}
+
+		
 		Thread.sleep(2000);
 
 		// TODO Auto-generated catch block
@@ -79,15 +83,18 @@ public class CreateManualCase_LeadAnalyst_AutoSuggestions extends BaseClass {
 			WebElement EmailAddress = driver
 					.findElement(By.xpath("//span[text()='Lead Analyst Email']//following-sibling::div/span"));
 
-			System.out.println("****************************************************************************************");
+			System.out.println(
+					"****************************************************************************************");
+
+			System.out.println("Email Address of Lead Analyst " + prop.getProperty("FirstName").trim() + " "
+					+ prop.getProperty("LastName").trim() + " is " + EmailAddress.getText());
+		} catch (Exception e) {
 
 			System.out.println(
-					"Email Address of Lead Analyst " + prop.getProperty("FirstName").trim()+ " "+prop.getProperty("LastName").trim()+ " is " + EmailAddress.getText());
-		} catch (Exception e) {
-			
-			System.out.println("****************************************************************************************");
+					"****************************************************************************************");
 			// TODO Auto-generated catch block
-			System.out.println("Email Address of "+prop.getProperty("FirstName").trim()+ " "+prop.getProperty("LastName").trim()+" is not populated");
+			System.out.println("Email Address of " + prop.getProperty("FirstName").trim() + " "
+					+ prop.getProperty("LastName").trim() + " is not populated");
 		}
 
 		Thread.sleep(4000);

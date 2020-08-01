@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.moodys.meerqats.QATSReviewer.LoginAsReviewer">
+      <class name="com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions">
         <methods>
           <include name="Base"/>
+          <include name="ManualCase_LeadAnalyst_Suggestions"/>
           <include name="teardown"/>
-          <include name="ReviewerAccess"/>
         </methods>
-      </class> <!-- com.moodys.meerqats.QATSReviewer.LoginAsReviewer -->
+      </class> <!-- com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,10 +12,11 @@ import org.testng.annotations.Test;
 
 import com.moodys.meerqats.pageclass.BaseClass;
 
-public class CreateManualCase_PACR_AutoSuggestions extends BaseClass {
-
+public class CreateManualCase_AddendumCreator_AutoSuggestions extends BaseClass {
+	
 	@Test
-	public void ManualCase_PACR_Suggestions() throws InterruptedException {
+	public void ManualCase_AddendumCreator_Suggestions() throws InterruptedException {
+
 		driver.findElement(By.xpath("//*[@id='txtUserID']")).sendKeys(prop.getProperty("ManagerUserName"));
 
 		driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys(prop.getProperty("ManagerPassword"));
@@ -40,7 +41,7 @@ public class CreateManualCase_PACR_AutoSuggestions extends BaseClass {
 
 		Thread.sleep(4000);
 
-		driver.findElement(By.xpath("//label[text()='PACR']/following-sibling::div/input[@type='text']"))
+		driver.findElement(By.xpath("//label[text()='Addendum Creator']/following-sibling::div/input[@type='text']"))
 				.sendKeys(prop.getProperty("FirstName"));
 
 		Thread.sleep(4000);
@@ -74,15 +75,37 @@ public class CreateManualCase_PACR_AutoSuggestions extends BaseClass {
 
 		}
 
-		Thread.sleep(4000);
+		
+		Thread.sleep(2000);
 
+		// TODO Auto-generated catch block
+		try {
+			WebElement EmailAddress = driver
+					.findElement(By.xpath("//span[text()='Addendum Creator']//following-sibling::div/span"));
+
+			System.out.println(
+					"****************************************************************************************");
+
+			System.out.println("Email Address of Addendum Creator" + prop.getProperty("FirstName").trim() + " "
+					+ prop.getProperty("LastName").trim() + " is " + EmailAddress.getText());
+		} catch (Exception e) {
+
+			System.out.println(
+					"****************************************************************************************");
+			// TODO Auto-generated catch block
+			System.out.println("Email Address of " + prop.getProperty("FirstName").trim() + " "
+					+ prop.getProperty("LastName").trim() + " is not populated");
+		}
+
+		Thread.sleep(4000);
 	}
 
 	@AfterClass
 	public void teardown() {
 
-	
+		driver.quit();
 
 	}
+
 
 }

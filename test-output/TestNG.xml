@@ -9,15 +9,15 @@
 
 	<test name="BasicFunctionality">
 		<classes>
-			<class name="com.moodys.meerqats.QATSManager.LoginAsManager" />
-			<class name="com.moodys.meerqats.QATSReviewer.LoginAsReviewer" />
-			<class name="com.moodys.meerqats.QATSAdmin.LoginAsAdmin" /> 
+
 			<class
 				name="com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions" />
 			<class
 				name="com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions" />
 			<class
 				name="com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions" />
+			<class
+				name="com.moodys.meerqats.QATSManager.CreateManualCase_AddendumCreator_AutoSuggestions" />
 
 		</classes>
 	</test> <!-- Test -->

@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
@@ -52,6 +53,8 @@ public class CreateManualCase_RCChair_AutoSuggestions extends BaseClass {
 
 	System.out.println(
 			"Total number of names with first name " + prop.getProperty("FirstName").trim() + " are " + Names.size());
+	
+	Assert.assertEquals(Names.size()>0, true);
 
 	System.out.println("****************************************************************************************");
 
