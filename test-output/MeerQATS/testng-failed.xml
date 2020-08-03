@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="BasicFunctionality(failed)">
     <classes>
+      <class name="com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions">
+        <methods>
+          <include name="Base"/>
+          <include name="teardown"/>
+          <include name="ManualCase_PACR_Suggestions"/>
+        </methods>
+      </class> <!-- com.moodys.meerqats.QATSManager.CreateManualCase_PACR_AutoSuggestions -->
       <class name="com.moodys.meerqats.QATSManager.CreateManualCase_AddendumCreator_AutoSuggestions">
         <methods>
           <include name="ManualCase_AddendumCreator_Suggestions"/>
@@ -13,6 +20,20 @@
           <include name="teardown"/>
         </methods>
       </class> <!-- com.moodys.meerqats.QATSManager.CreateManualCase_AddendumCreator_AutoSuggestions -->
+      <class name="com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions">
+        <methods>
+          <include name="Base"/>
+          <include name="ManualCase_LeadAnalyst_Suggestions"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions -->
+      <class name="com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions">
+        <methods>
+          <include name="Base"/>
+          <include name="ManualCase_RCChair_Suggestions"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.moodys.meerqats.QATSManager.CreateManualCase_RCChair_AutoSuggestions -->
     </classes>
   </test> <!-- BasicFunctionality(failed) -->
 </suite> <!-- Failed suite [MeerQATS] -->

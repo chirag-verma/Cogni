@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42337" started-at="2020-07-31T14:23:22Z" finished-at="2020-07-31T14:24:04Z">
+  <suite name="Default suite" duration-ms="45005" started-at="2020-08-03T11:32:39Z" finished-at="2020-08-03T11:33:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42337" started-at="2020-07-31T14:23:22Z" finished-at="2020-07-31T14:24:04Z">
+    <test name="Default test" duration-ms="45005" started-at="2020-08-03T11:32:39Z" finished-at="2020-08-03T11:33:24Z">
       <class name="com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions">
-        <test-method status="PASS" signature="Base()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="Base" is-config="true" duration-ms="8792" started-at="2020-07-31T14:23:22Z" finished-at="2020-07-31T14:23:31Z">
+        <test-method status="PASS" signature="Base()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="Base" is-config="true" duration-ms="7434" started-at="2020-08-03T11:32:39Z" finished-at="2020-08-03T11:32:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="PASS" signature="ManualCase_LeadAnalyst_Suggestions()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="ManualCase_LeadAnalyst_Suggestions" duration-ms="32528" started-at="2020-07-31T14:23:31Z" finished-at="2020-07-31T14:24:03Z">
+        <test-method status="PASS" signature="ManualCase_LeadAnalyst_Suggestions()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="ManualCase_LeadAnalyst_Suggestions" duration-ms="36665" started-at="2020-08-03T11:32:46Z" finished-at="2020-08-03T11:33:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ManualCase_LeadAnalyst_Suggestions -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="teardown" is-config="true" duration-ms="996" started-at="2020-07-31T14:24:03Z" finished-at="2020-07-31T14:24:04Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="teardown" is-config="true" duration-ms="883" started-at="2020-08-03T11:33:23Z" finished-at="2020-08-03T11:33:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

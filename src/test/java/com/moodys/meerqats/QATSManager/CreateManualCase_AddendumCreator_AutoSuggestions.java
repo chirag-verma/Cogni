@@ -3,6 +3,7 @@ package com.moodys.meerqats.QATSManager;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,7 +14,7 @@ import org.testng.annotations.Test;
 import com.moodys.meerqats.pageclass.BaseClass;
 
 public class CreateManualCase_AddendumCreator_AutoSuggestions extends BaseClass {
-	
+
 	@Test
 	public void ManualCase_AddendumCreator_Suggestions() throws InterruptedException {
 
@@ -41,8 +42,18 @@ public class CreateManualCase_AddendumCreator_AutoSuggestions extends BaseClass 
 
 		Thread.sleep(4000);
 
+		JavascriptExecutor Js = (JavascriptExecutor) driver;
+		Js.executeScript("scroll(0,400)");
+		
+		act.moveToElement(driver.findElement(By.xpath("//label[text()='Addendum Creator']/following-sibling::div/input[@type='text']"))).doubleClick();
+		Thread.sleep(2000);
+		
+		act.sendKeys(Keys.SPACE).build().perform();
+		
 		driver.findElement(By.xpath("//label[text()='Addendum Creator']/following-sibling::div/input[@type='text']"))
-				.sendKeys(prop.getProperty("FirstName"));
+				.sendKeys(prop.getProperty("FirstName"));		
+;
+		
 
 		Thread.sleep(4000);
 
@@ -53,8 +64,8 @@ public class CreateManualCase_AddendumCreator_AutoSuggestions extends BaseClass 
 
 		System.out.println("Total number of names with first name " + prop.getProperty("FirstName").trim() + " are "
 				+ Names.size());
-		
-		Assert.assertEquals(Names.size()>0, true);
+
+		Assert.assertEquals(Names.size() > 0, true);
 
 		System.out.println("****************************************************************************************");
 
@@ -75,7 +86,6 @@ public class CreateManualCase_AddendumCreator_AutoSuggestions extends BaseClass 
 
 		}
 
-		
 		Thread.sleep(2000);
 
 		// TODO Auto-generated catch block
@@ -106,6 +116,5 @@ public class CreateManualCase_AddendumCreator_AutoSuggestions extends BaseClass 
 		driver.quit();
 
 	}
-
 
 }

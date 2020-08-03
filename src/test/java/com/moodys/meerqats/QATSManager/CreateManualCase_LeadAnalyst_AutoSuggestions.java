@@ -40,6 +40,12 @@ public class CreateManualCase_LeadAnalyst_AutoSuggestions extends BaseClass {
 		driver.findElement(By.xpath("//button[text()='Create Manual Case']")).click();
 
 		Thread.sleep(4000);
+		
+		act.moveToElement(driver.findElement(By.xpath("//label[text()='Lead Analyst Name']/following-sibling::div/input[@type='text']"))).doubleClick();
+		Thread.sleep(2000);
+		
+		act.sendKeys(Keys.SPACE).build().perform();
+		
 
 		driver.findElement(By.xpath("//label[text()='Lead Analyst Name']/following-sibling::div/input[@type='text']"))
 				.sendKeys(prop.getProperty("FirstName"));
