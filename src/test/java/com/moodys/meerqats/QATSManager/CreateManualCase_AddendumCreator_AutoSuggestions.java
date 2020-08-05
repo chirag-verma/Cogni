@@ -44,18 +44,12 @@ public class CreateManualCase_AddendumCreator_AutoSuggestions extends BaseClass 
 
 		JavascriptExecutor Js = (JavascriptExecutor) driver;
 		Js.executeScript("scroll(0,400)");
-		
-		act.moveToElement(driver.findElement(By.xpath("//label[text()='Addendum Creator']/following-sibling::div/input[@type='text']"))).doubleClick();
-		Thread.sleep(2000);
-		
-		act.sendKeys(Keys.SPACE).build().perform();
-		
-		driver.findElement(By.xpath("//label[text()='Addendum Creator']/following-sibling::div/input[@type='text']"))
-				.sendKeys(prop.getProperty("FirstName"));		
-;
-		
 
-		Thread.sleep(4000);
+		driver.findElement(By.xpath("//label[text()='Addendum Creator']/following-sibling::div/input[@type='text']"))
+				.sendKeys(prop.getProperty("FirstName"));
+		;
+
+		Thread.sleep(6000);
 
 		List<WebElement> Names = driver
 				.findElements(By.xpath("//tr[contains(@data-gargs,'" + prop.getProperty("FirstName").trim() + "')]"));

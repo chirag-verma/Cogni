@@ -39,17 +39,11 @@ public class CreateManualCase_PACR_AutoSuggestions extends BaseClass {
 		driver.findElement(By.xpath("//button[text()='Create Manual Case']")).click();
 
 		Thread.sleep(4000);
-		
-		act.moveToElement(driver.findElement(By.xpath("//label[text()='PACR']/following-sibling::div/input[@type='text']"))).doubleClick();
-		Thread.sleep(2000);
-		
-		act.sendKeys(Keys.SPACE).build().perform();
-		
 
 		driver.findElement(By.xpath("//label[text()='PACR']/following-sibling::div/input[@type='text']"))
 				.sendKeys(prop.getProperty("FirstName"));
 
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 
 		List<WebElement> Names = driver
 				.findElements(By.xpath("//tr[contains(@data-gargs,'" + prop.getProperty("FirstName").trim() + "')]"));
@@ -58,8 +52,8 @@ public class CreateManualCase_PACR_AutoSuggestions extends BaseClass {
 
 		System.out.println("Total number of names with first name " + prop.getProperty("FirstName").trim() + " are "
 				+ Names.size());
-		
-		Assert.assertEquals(Names.size()>0, true);
+
+		Assert.assertEquals(Names.size() > 0, true);
 
 		System.out.println("****************************************************************************************");
 
@@ -87,7 +81,7 @@ public class CreateManualCase_PACR_AutoSuggestions extends BaseClass {
 	@AfterClass
 	public void teardown() {
 
-	driver.quit();
+		driver.quit();
 
 	}
 

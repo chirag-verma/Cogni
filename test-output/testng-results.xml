@@ -2,53 +2,29 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39232" started-at="2020-08-03T12:59:02Z" finished-at="2020-08-03T12:59:42Z">
+  <suite name="Default suite" duration-ms="46947" started-at="2020-08-05T11:36:57Z" finished-at="2020-08-05T11:37:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39232" started-at="2020-08-03T12:59:02Z" finished-at="2020-08-03T12:59:42Z">
+    <test name="Default test" duration-ms="46947" started-at="2020-08-05T11:36:57Z" finished-at="2020-08-05T11:37:44Z">
       <class name="com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions">
-        <test-method status="PASS" signature="Base()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="Base" is-config="true" duration-ms="9018" started-at="2020-08-03T12:59:02Z" finished-at="2020-08-03T12:59:11Z">
+        <test-method status="PASS" signature="Base()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="Base" is-config="true" duration-ms="6959" started-at="2020-08-05T11:36:57Z" finished-at="2020-08-05T11:37:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="FAIL" signature="ManualCase_LeadAnalyst_Suggestions()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="ManualCase_LeadAnalyst_Suggestions" duration-ms="29095" started-at="2020-08-03T12:59:11Z" finished-at="2020-08-03T12:59:40Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="ManualCase_LeadAnalyst_Suggestions()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="ManualCase_LeadAnalyst_Suggestions" duration-ms="39028" started-at="2020-08-05T11:37:04Z" finished-at="2020-08-05T11:37:43Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Lead Analyst Name']/following-sibling::div/input[@type='text']"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-MDBLIRD', ip: '10.49.146.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: D:\Users\VermaC\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 6a1d78b70d0d118895a41712c6921ab9
-*** Element info: {Using=xpath, value=//label[text()='Lead Analyst Name']/following-sibling::div/input[@type='text']}]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Lead Analyst Name']/following-sibling::div/input[@type='text']"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-MDBLIRD', ip: '10.49.146.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: D:\Users\VermaC\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 6a1d78b70d0d118895a41712c6921ab9
-*** Element info: {Using=xpath, value=//label[text()='Lead Analyst Name']/following-sibling::div/input[@type='text']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions.ManualCase_LeadAnalyst_Suggestions(CreateManualCase_LeadAnalyst_AutoSuggestions.java:44)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions.ManualCase_LeadAnalyst_Suggestions(CreateManualCase_LeadAnalyst_AutoSuggestions.java:57)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -76,11 +52,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ManualCase_LeadAnalyst_Suggestions -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="teardown" is-config="true" duration-ms="1091" started-at="2020-08-03T12:59:40Z" finished-at="2020-08-03T12:59:42Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.moodys.meerqats.QATSManager.CreateManualCase_LeadAnalyst_AutoSuggestions@29774679]" name="teardown" is-config="true" duration-ms="933" started-at="2020-08-05T11:37:43Z" finished-at="2020-08-05T11:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

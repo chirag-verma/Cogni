@@ -40,14 +40,11 @@ public class CreateManualCase_LeadAnalyst_AutoSuggestions extends BaseClass {
 		driver.findElement(By.xpath("//button[text()='Create Manual Case']")).click();
 
 		Thread.sleep(4000);
-		
-		
-		
 
 		driver.findElement(By.xpath("//label[text()='Lead Analyst Name']/following-sibling::div/input[@type='text']"))
 				.sendKeys(prop.getProperty("FirstName"));
 
-		Thread.sleep(4000);
+		Thread.sleep(15000);
 
 		List<WebElement> Names = driver
 				.findElements(By.xpath("//tr[contains(@data-gargs,'" + prop.getProperty("FirstName").trim() + "')]"));
@@ -56,8 +53,8 @@ public class CreateManualCase_LeadAnalyst_AutoSuggestions extends BaseClass {
 
 		System.out.println("Total number of names with first name " + prop.getProperty("FirstName").trim() + " are "
 				+ Names.size());
-		
-		Assert.assertEquals(Names.size()>0, true);
+
+		Assert.assertEquals(Names.size() > 0, true);
 
 		System.out.println("****************************************************************************************");
 
@@ -78,7 +75,6 @@ public class CreateManualCase_LeadAnalyst_AutoSuggestions extends BaseClass {
 
 		}
 
-		
 		Thread.sleep(2000);
 
 		// TODO Auto-generated catch block
